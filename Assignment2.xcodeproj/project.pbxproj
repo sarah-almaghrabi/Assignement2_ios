@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		837B60E3214A078C006A2A65 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B60E2214A078C006A2A65 /* FavViewController.swift */; };
+		D0623A3F214A1944009F38C3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623A3E214A1944009F38C3 /* Data.swift */; };
 		D06CC6AF2146600D000469D5 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06CC6AE2146600D000469D5 /* LogInController.swift */; };
 		D090F80D2147C91600DB7ADD /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D090F7FE2147C91500DB7ADD /* LocationViewController.swift */; };
 		D090F80E2147C91600DB7ADD /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D090F8002147C91500DB7ADD /* LocationView.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		837B60E2214A078C006A2A65 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
+		D0623A3E214A1944009F38C3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D06CC6AE2146600D000469D5 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		D090F7FE2147C91500DB7ADD /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		D090F8002147C91500DB7ADD /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
@@ -140,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				D090F8022147C91500DB7ADD /* Views */,
-				D090F8042147C91500DB7ADD /* DetailsFoodViewController.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -229,6 +230,7 @@
 		D0D47D54214617450059CC7B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D090F8042147C91500DB7ADD /* DetailsFoodViewController.swift */,
 				D0D47D52214617190059CC7B /* Registration_1Controller.swift */,
 				D0B741C1214150B40066EE72 /* ViewController.swift */,
 				D06CC6AE2146600D000469D5 /* LogInController.swift */,
@@ -244,6 +246,7 @@
 				D0D47D5621461B280059CC7B /* User.swift */,
 				D0D47D5821461C3B0059CC7B /* Model.swift */,
 				D0A3B9D82147A8EA009A4A22 /* Resturant.swift */,
+				D0623A3E214A1944009F38C3 /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				D0B741C0214150B40066EE72 /* AppDelegate.swift in Sources */,
 				D090F8152147C91600DB7ADD /* BaseView.swift in Sources */,
 				D090F8142147C91600DB7ADD /* RestaurantTableViewCell.swift in Sources */,
+				D0623A3F214A1944009F38C3 /* Data.swift in Sources */,
 				837B60E3214A078C006A2A65 /* FavViewController.swift in Sources */,
 				D090F8102147C91600DB7ADD /* DetailsFoodViewController.swift in Sources */,
 			);
