@@ -34,5 +34,8 @@ class Model{
         users[user.email]?.password = pass
     }
     
+    func getResturants() -> [Resturant]{
+        return Data().loadSampleResturant()
+    }
     
 }

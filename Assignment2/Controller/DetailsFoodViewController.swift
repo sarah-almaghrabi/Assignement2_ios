@@ -10,13 +10,19 @@ import UIKit
 
 class DetailsFoodViewController: UIViewController {
 
-    @IBOutlet weak var detailsFoodView: DetailsFoodView!
-    
+    var resturantID : Int?
+    @IBOutlet weak var resName: UILabel!
+    @IBOutlet weak var name: UILabel!
+    var resturant : Resturant?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        resturant = Model().getResturants()[ resturantID! ]
+        resName .text = resturant?.name
+        
     }
+    
+    
 
 
 }

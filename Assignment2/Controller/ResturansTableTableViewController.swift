@@ -11,8 +11,8 @@ import UIKit
 class ResturansTableTableViewController: UITableViewController {
 
     //MARK: Properties
-    
-    var resturants = [Resturant]()
+    var selectedResturant : Int?
+    var resturants = Model().getResturants()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,18 +20,10 @@ class ResturansTableTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-          self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        // Load the sample data.
-        loadSampleResturant()
-        
-    }
+       //   self.navigationItem.rightBarButtonItem = self.editButtonItem
+   }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,73 +52,24 @@ class ResturansTableTableViewController: UITableViewController {
         return cell
         }
    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedResturant = indexPath.row
+        performSegue(withIdentifier: "ResDetailsSegue", sender: self)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    //MARK: Private Methods
     
-    private func loadSampleResturant() {
-        
-        let photo1 = UIImage(named: "rest1")
-        let photo2 = UIImage(named: "rest2")
-        let photo3 = UIImage(named: "rest3")
-        
-        guard let rest1 = Resturant(name: "Tahinah ", photo: photo1 ) else {
-            fatalError("Unable to instantiate resturant")
+    //Pass selected resturant to DetailsFoodViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "ResDetailsSegue" {
+            if let dv = segue.destination as? DetailsFoodViewController {
+                dv.resturantID = selectedResturant
+            }
         }
-        
-        guard let rest2 = Resturant(name: "Fish and Ships", photo: photo2) else {
-            fatalError("Unable to instantiate resturant")
-        }
-        
-        guard let rest3 = Resturant(name: "Italian Cousine", photo: photo3) else {
-            fatalError("Unable to instantiate resturant")
-        }
-        
-        resturants += [rest1, rest2, rest3]
     }
+    
+    
+   
+    
+   
     
 }
