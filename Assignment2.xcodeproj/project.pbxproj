@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		837B60E3214A078C006A2A65 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B60E2214A078C006A2A65 /* FavViewController.swift */; };
+		D026B5E7214B726E0040672C /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026B5E6214B726D0040672C /* Artwork.swift */; };
 		D0623A3F214A1944009F38C3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623A3E214A1944009F38C3 /* Data.swift */; };
+		D0623A5F214B26DE009F38C3 /* CollectionViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623A5E214B26DE009F38C3 /* CollectionViewCellController.swift */; };
+		D0623A63214B31AC009F38C3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623A62214B31AC009F38C3 /* CollectionViewController.swift */; };
 		D06CC6AF2146600D000469D5 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06CC6AE2146600D000469D5 /* LogInController.swift */; };
 		D090F80D2147C91600DB7ADD /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D090F7FE2147C91500DB7ADD /* LocationViewController.swift */; };
 		D090F80E2147C91600DB7ADD /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D090F8002147C91500DB7ADD /* LocationView.swift */; };
@@ -53,7 +56,10 @@
 
 /* Begin PBXFileReference section */
 		837B60E2214A078C006A2A65 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
+		D026B5E6214B726D0040672C /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Artwork.swift; path = "../../../../../../../Desktop/iphone/untitled folder/HonoluluArt final/HonoluluArt/Artwork.swift"; sourceTree = "<group>"; };
 		D0623A3E214A1944009F38C3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D0623A5E214B26DE009F38C3 /* CollectionViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellController.swift; sourceTree = "<group>"; };
+		D0623A62214B31AC009F38C3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		D06CC6AE2146600D000469D5 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		D090F7FE2147C91500DB7ADD /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		D090F8002147C91500DB7ADD /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
@@ -166,6 +172,7 @@
 		D0A3B9DA2147A946009A4A22 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D026B5E6214B726D0040672C /* Artwork.swift */,
 				D090F80B2147C91600DB7ADD /* RestaurantTableViewCell.swift */,
 				D0B741C3214150B40066EE72 /* Main.storyboard */,
 			);
@@ -236,6 +243,8 @@
 				D06CC6AE2146600D000469D5 /* LogInController.swift */,
 				D0A3B9D421469C39009A4A22 /* ForgotPasswordController.swift */,
 				D0A3B9DB2147A9DE009A4A22 /* ResturansTableTableViewController.swift */,
+				D0623A5E214B26DE009F38C3 /* CollectionViewCellController.swift */,
+				D0623A62214B31AC009F38C3 /* CollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,11 +404,14 @@
 				D0B741C2214150B40066EE72 /* ViewController.swift in Sources */,
 				D0A3B9DC2147A9DE009A4A22 /* ResturansTableTableViewController.swift in Sources */,
 				D06CC6AF2146600D000469D5 /* LogInController.swift in Sources */,
+				D026B5E7214B726E0040672C /* Artwork.swift in Sources */,
 				D0D47D53214617190059CC7B /* Registration_1Controller.swift in Sources */,
 				D0B741C0214150B40066EE72 /* AppDelegate.swift in Sources */,
 				D090F8152147C91600DB7ADD /* BaseView.swift in Sources */,
 				D090F8142147C91600DB7ADD /* RestaurantTableViewCell.swift in Sources */,
+				D0623A5F214B26DE009F38C3 /* CollectionViewCellController.swift in Sources */,
 				D0623A3F214A1944009F38C3 /* Data.swift in Sources */,
+				D0623A63214B31AC009F38C3 /* CollectionViewController.swift in Sources */,
 				837B60E3214A078C006A2A65 /* FavViewController.swift in Sources */,
 				D090F8102147C91600DB7ADD /* DetailsFoodViewController.swift in Sources */,
 			);
